@@ -6,9 +6,9 @@
       "type": "Microsoft.Storage/storageAccounts",
       "apiVersion": "2021-04-01",
       "name": "storageaccountglau01",
-      "location": "northeurope",
+      "location": "Brazil South",
       "sku": {
-        "name": "Standard_LRS"
+        "name": "Standard_GRS"
       },
       "kind": "StorageV2"
     }

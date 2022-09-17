@@ -1,5 +1,5 @@
 $rg = 'arm-introduction-01'
-New-AzResourceGroup -Name $rg -Location northeurope -Force
+New-AzResourceGroup -Name $rg -Location brazilsouth -Force
 
 New-AzResourceGroupDeployment `
     -Name 'new-storage' `
