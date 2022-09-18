@@ -1,4 +1,4 @@
-# Infrastructure as Code Persona studies
+# Infrastructure as Code Personal studies
 
 Some IaC (Infrastructure as Code) studies with Azure.
 
