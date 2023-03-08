@@ -36,7 +36,7 @@ az account set --subscription {your subscription ID}
 6. Set the default resource group 
 
 ```bash
-az configure --defaults group=learn-66bfb9c0-5c99-4cd7-9704-7dff015cee48
+az configure --defaults group=learn-a10e71dc-8eca-4912-889d-2c025975f918
 ```
 
 7. Deploy the template to Azure
