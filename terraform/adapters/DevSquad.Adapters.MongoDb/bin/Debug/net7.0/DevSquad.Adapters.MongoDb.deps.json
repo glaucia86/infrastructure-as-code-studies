@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "DevSquad.Adapters.MongoDb/1.0.0": {
+        "runtime": {
+          "DevSquad.Adapters.MongoDb.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DevSquad.Adapters.MongoDb/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

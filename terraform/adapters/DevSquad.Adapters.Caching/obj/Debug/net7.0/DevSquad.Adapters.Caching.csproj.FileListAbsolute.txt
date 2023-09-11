@@ -1,0 +1,12 @@
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.Caching\bin\Debug\net7.0\DevSquad.Adapters.Caching.deps.json
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.Caching\bin\Debug\net7.0\DevSquad.Adapters.Caching.dll
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.Caching\bin\Debug\net7.0\DevSquad.Adapters.Caching.pdb
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.Caching\obj\Debug\net7.0\DevSquad.Adapters.Caching.csproj.AssemblyReference.cache
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.Caching\obj\Debug\net7.0\DevSquad.Adapters.Caching.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.Caching\obj\Debug\net7.0\DevSquad.Adapters.Caching.AssemblyInfoInputs.cache
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.Caching\obj\Debug\net7.0\DevSquad.Adapters.Caching.AssemblyInfo.cs
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.Caching\obj\Debug\net7.0\DevSquad.Adapters.Caching.csproj.CoreCompileInputs.cache
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.Caching\obj\Debug\net7.0\DevSquad.Adapters.Caching.dll
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.Caching\obj\Debug\net7.0\refint\DevSquad.Adapters.Caching.dll
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.Caching\obj\Debug\net7.0\DevSquad.Adapters.Caching.pdb
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.Caching\obj\Debug\net7.0\ref\DevSquad.Adapters.Caching.dll

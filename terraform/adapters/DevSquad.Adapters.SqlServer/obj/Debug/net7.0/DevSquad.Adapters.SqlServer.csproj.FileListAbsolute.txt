@@ -1,0 +1,17 @@
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\bin\Debug\net7.0\DevSquad.Adapters.SqlServer.deps.json
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\bin\Debug\net7.0\DevSquad.Adapters.SqlServer.dll
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\bin\Debug\net7.0\DevSquad.Adapters.SqlServer.pdb
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\obj\Debug\net7.0\DevSquad.Adapters.SqlServer.csproj.AssemblyReference.cache
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\obj\Debug\net7.0\DevSquad.Adapters.SqlServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\obj\Debug\net7.0\DevSquad.Adapters.SqlServer.AssemblyInfoInputs.cache
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\obj\Debug\net7.0\DevSquad.Adapters.SqlServer.AssemblyInfo.cs
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\obj\Debug\net7.0\DevSquad.Adapters.SqlServer.csproj.CoreCompileInputs.cache
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\obj\Debug\net7.0\DevSquad.Adapters.SqlServer.dll
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\obj\Debug\net7.0\refint\DevSquad.Adapters.SqlServer.dll
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\obj\Debug\net7.0\DevSquad.Adapters.SqlServer.pdb
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\obj\Debug\net7.0\ref\DevSquad.Adapters.SqlServer.dll
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\bin\Debug\net7.0\DevSquad.Modules.Application.dll
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\bin\Debug\net7.0\DevSquad.Modules.Domain.dll
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\bin\Debug\net7.0\DevSquad.Modules.Application.pdb
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\bin\Debug\net7.0\DevSquad.Modules.Domain.pdb
+C:\repos\devsquad\src\adapters\DevSquad.Adapters.SqlServer\obj\Debug\net7.0\DevSquad.Adapters.SqlServer.csproj.CopyComplete
