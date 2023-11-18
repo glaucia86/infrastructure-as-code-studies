@@ -134,7 +134,7 @@ Then, run the following command:
 az deployment group create --template-file main.bicep
 ```
 
-## Trabalhando com parâmetros:
+## Exercise - Add parameters and variables to your Bicep template
 
 ```bicep
 @description('Specifies the location for resources.')
@@ -192,4 +192,8 @@ Then run the following command:
 az deployment group create --template-file main.bicep --parameters environmentType=nonprod
 ```
 
-Code developed: **[commit]()**
+Code developed: **[commit](https://github.com/glaucia86/infrastructure-as-code-studies/commit/bebc5a60dc6cb64ab7ed6c54a8500c882c75ef09)**
+
+## Exercise - Refactor your template to use modules
+
+
