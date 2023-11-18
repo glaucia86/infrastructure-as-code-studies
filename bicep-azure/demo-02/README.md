@@ -196,4 +196,6 @@ Code developed: **[commit](https://github.com/glaucia86/infrastructure-as-code-s
 
 ## Exercise - Refactor your template to use modules
 
+Code developed: **[commit](https://github.com/glaucia86/infrastructure-as-code-studies/commit/7674f23e0ccf1269c7c3c13998951e0dc623573e)**
+
 
