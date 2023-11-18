@@ -18,7 +18,7 @@ Firstly you need to use Azure CLI. To do this, you need to install Azure CLI on 
 
 Open the Power Shell and run the following command:
 
-```powershell
+```bash
 az login
 ```
 
@@ -26,25 +26,25 @@ This command will open a browser window and you will need to login with your Azu
 
 If you have more than one subscription, you can list all subscriptions with the following command:
 
-```powershell
+```bash
 az account list --output table
 ```
 
 Then, you need to set the subscription you want to use. To do this, run the following command:
 
-```powershell
+```bash
 az account set --subscription <subscription-id>
 ```
 
 After that, you need to create a resource group. To do this, run the following command:
 
-```powershell
+```bash
 az group create --name storage-resource-group --location eastus
 ```
 
 Then, you need to create a storage account. To do this, run the following command:
 
-```powershell
+```bash
 az storage account create \
   --name mystorageaccount \
   --resource-group storage-resource-group \
@@ -76,7 +76,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
 
 Then, run the following command:
 
-```powershell
+```bash
 az configure --defaults group=learn-c4f44288-e5a5-4b1b-881b-1e001096a70b
 ```
 
@@ -86,7 +86,7 @@ az deployment group create --template-file main.bicep
 
 If you want to see the implementation of the model, run the following command:
 
-```powershell
+```bash
 az deployment group list --output table
 ```
 
@@ -130,8 +130,66 @@ resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
 
 Then, run the following command:
 
-```powershell
+```bash
 az deployment group create --template-file main.bicep
 ```
 
+## Trabalhando com parâmetros:
 
+```bicep
+@description('Specifies the location for resources.')
+param location string = 'westus3'
+
+@description('Specifies the name of the storage account.')
+param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
+
+@description('Specifies the name of the app service plan.')
+param appServicePlanName string = 'toylaunch${uniqueString(resourceGroup().id)}'
+
+@allowed([
+  'nonprod'
+  'prod'
+])
+param environmentType string
+
+var appServiceAppName = 'toy-product-launch-app-glau02'
+var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
+var appServicePlanSkuName = (environmentType == 'prod') ? 'P2v3' : 'F1'
+
+resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
+  name: storageAccountName
+  location: location
+  sku: {
+    name: storageAccountSkuName
+  }
+  kind: 'StorageV2'
+  properties: {
+    accessTier: 'Hot'
+  }
+}
+
+resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
+  name: appServicePlanName
+  location: location
+  sku: {
+    name: appServicePlanSkuName
+  }
+}
+
+resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
+  name: appServiceAppName
+  location: location
+  properties: {
+    serverFarmId: appServicePlan.id
+    httpsOnly: true
+  }
+}
+``` 
+
+Then run the following command:
+
+```bash
+az deployment group create --template-file main.bicep --parameters environmentType=nonprod
+```
+
+Code developed: **[commit]()**

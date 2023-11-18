@@ -1,11 +1,27 @@
 @description('Specifies the location for resources.')
 param location string = 'westus3'
 
+@description('Specifies the name of the storage account.')
+param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
+
+@description('Specifies the name of the app service plan.')
+param appServicePlanName string = 'toylaunch${uniqueString(resourceGroup().id)}'
+
+@allowed([
+  'nonprod'
+  'prod'
+])
+param environmentType string
+
+var appServiceAppName = 'toy-product-launch-app-glau02'
+var storageAccountSkuName = (environmentType == 'prod') ? 'Standard_GRS' : 'Standard_LRS'
+var appServicePlanSkuName = (environmentType == 'prod') ? 'P2v3' : 'F1'
+
 resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
-  name: 'toylaunchstorageglau02'
+  name: storageAccountName
   location: location
   sku: {
-    name: 'Standard_LRS'
+    name: storageAccountSkuName
   }
   kind: 'StorageV2'
   properties: {
@@ -14,15 +30,15 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
 }
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
-  name: 'toy-product-launch-plan-starter'
+  name: appServicePlanName
   location: location
   sku: {
-    name: 'F1'
+    name: appServicePlanSkuName
   }
 }
 
 resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
-  name: 'toy-product-launch-app-glau02'
+  name: appServiceAppName
   location: location
   properties: {
     serverFarmId: appServicePlan.id
