@@ -184,3 +184,15 @@ resource sqlServerAudit 'Microsoft.Sql/servers/auditingSettings@2021-11-01-previ
 }
 ```
 
+## Exercise - Deploy multiple resources by using loops
+
+Link to the exercise: **[HERE](https://learn.microsoft.com/en-us/training/modules/build-flexible-bicep-templates-conditions-loops/5-exercise-loops?pivots=powershell)**
+
+Create a folder called `modules` and then move the `main.bicep` file to this folder. And then rename the file to `database.bicep`.
+
+After that, create a new file named `main.bicep` and copy the following code into it:
+
+
+```bicep
+```
+
