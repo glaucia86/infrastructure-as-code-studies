@@ -6,17 +6,17 @@ param locations array = [
 
 @secure()
 @description('The administrator login username for the SQL server.')
-param sqlServerAdminstratorLogin string
+param sqlServerAdministratorLogin string
 
 @secure()
 @description('The administrator login password for the SQL server.')
-param sqlServerAdminstratorLoginPassword string
+param sqlServerAdministratorLoginPassword string
 
 module databases '../modules/database.bicep' = [for location in locations: {
   name: 'database-${location}'
   params: {
     location: location
-    sqlServerAdminstratorLogin: sqlServerAdminstratorLogin
-    sqlServerAdminstratorLoginPassword: sqlServerAdminstratorLoginPassword
+    sqlServerAdministratorLogin: sqlServerAdministratorLogin
+    sqlServerAdministratorLoginPassword: sqlServerAdministratorLoginPassword
   }
 }]
