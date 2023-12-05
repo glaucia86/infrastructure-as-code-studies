@@ -34,7 +34,7 @@ Then, you need to set the subscription you want to use. To do this, run the foll
 az account set --subscription <subscription-id>
 ```
 
-Now, go to the `demo-03 > templates` folder and create a file called `main.bicep` and paste the following content:
+Now, go to the `demo-0 > templates` folder and create a file called `main.bicep` and paste the following content:
 
 ```bicep
 @description('The name of the environment. This must be dev, test, or prod.')
